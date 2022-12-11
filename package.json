@@ -1,0 +1,24 @@
+{
+  "name": "landing_page_tailwindcss",
+  "version": "1.0.0",
+  "description": "![](https://www.youtube.com/watch?v=_CRaTZGYmgU)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greeneley/landing_page_tailwindcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greeneley/landing_page_tailwindcss/issues"
+  },
+  "homepage": "https://github.com/greeneley/landing_page_tailwindcss#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
