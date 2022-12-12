@@ -18,8 +18,7 @@
                     <img src="./img/logo.png" alt="website logo">
                 </div>
                 <!-- links -->
-                <ul id="menu"
-                    class="invisible fixed top-0 w-full h-screen flex flex-col justify-center items-center bg-gray-900 bg-opacity-90 md:bg-transparent md:h-auto md:flex-row md:justify-between md:static md:visible">
+                <ul id="menu" class="invisible c-menu md:visible">
                     <li class="m-12 md:m-0"><a href="#" class="c-link">Home</a>
                     </li>
                     <li class="m-12 md:m-0"><a href="#" class="c-link">Product</a>
@@ -30,7 +29,7 @@
                     </li>
                 </ul>
                 <!-- menu button -->
-                <div id="menu-button" class="z-20 md:invisible">
+                <div id="menu-button" class="z-20 md:invisible cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -42,54 +41,58 @@
     </header>
     <!-- banner -->
     <section>
-        <div style="background-image:url('./img/banner.png')">
-            <div>
+        <div class="w-full bg-no-repeat bg-cover relative h-custom" style="background-image:url('./img/banner.png')">
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-center">
                 <!-- tag -->
-                <p>Food app</p>
+                <p class="text-xl mb-5">Food app</p>
                 <!-- title -->
-                <h1>
+                <h1 class="text-4xl mb-5 font-bold max-w-2xl md:leading-relaxed md:text-5xl">
                     Why stay hungry when
                     you can order form Bella Onojie
                 </h1>
                 <!-- desc -->
-                <p>Download the bella onoje’s food app now on</p>
+                <p class="text-xl mb-5">Download the bella onoje’s food app now on</p>
                 <!-- buttons -->
-                <div>
-                    <button>Playstore</button>
-                    <button>Appstore</button>
+                <div class="flex justify-center">
+                    <button
+                        class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all">Playstore</button>
+                    <button
+                        class="mx-4 border border-white bg-transparent px-10 py-3 rounded-full hover:bg-red-500 hover:border-transparent transition-all">Appstore</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- app-images-->
-    <section>
-        <div>
-            <img src="./img/phone-app-1.png" alt="phone app screens">
-            <img src="./img/phone-app-2.png" alt="phone app screens">
+    <section class="relative">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/4">
+            <img src="./img/app-img.png" alt="phone app screens" class="max-w-none w-screen pl-20 md:w-auto">
         </div>
     </section>
     <!-- app steps -->
-    <section>
+    <section class="pt-96 mt-28 sm:pt-40-c md:mt-0">
         <!-- container -->
-        <div>
-            <hr>
+        <div class="container mx-auto px-4">
+            <hr class="w-4/5 mx-auto h-0.5 bg-gray-200 md:w-2/5">
             <!-- title  -->
-            <h2>How the app works</h2>
+            <h2 class="text-center tet-4xl font-semibold py-10">How the app works</h2>
             <!-- step 1 -->
-            <div>
+            <div class="flex flex-col justify-evenly items-center py-10 md:flex-row">
                 <!-- img -->
                 <div>
                     <img src="./img/app-1.png" alt="app screen">
                 </div>
                 <!-- text -->
-                <div>
+                <div class="text-center mb-10 md:text-left">
                     <!-- tag -->
-                    <span>Create an account</span>
+                    <span class="text-red-500 font-semibold">Create an account</span>
                     <!-- title -->
-                    <h2>Create/login to an existing
+                    <h2 class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5">Create/login to an
+                        existing
                         account to get started</h2>
                     <!-- desc -->
-                    <p>An account is created with your email
+                    <p class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0">An account is created with your
+                        email
                         and a desired password</p>
                 </div>
             </div>
