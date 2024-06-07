@@ -1,4 +1,4 @@
-# landing_page_tailwindcss
+# Landing-Page
 
 [Video](https://www.youtube.com/watch?v=_CRaTZGYmgU&t=3694s)
 
